@@ -17,7 +17,7 @@ export class EscrowApiCicdStack extends cdk.Stack {
       pipelineName: "EscrowPipeline",
       synth: new ShellStep("Synth", {
         input: CodePipelineSource.gitHub("uwaifo/lambda-trigger", "main"),
-        commands: ["npm ci", "npm run build", "npx synth"],
+        commands: ["npm ci", "npm run build", "npx cdk synth"],
       }),
     });
 
