@@ -6,7 +6,7 @@ import { EscrowApiCicdStack } from '../lib/escrow-api-cicd-stack';
 const app = new cdk.App();
 new EscrowApiCicdStack(app, 'EscrowApiCicdStack', {
  
-   env: { account: '471249635533', region: 'us-east-1' },
+   env: { account: '471249635533', region: 'us-east-2' },
 
 
  });
